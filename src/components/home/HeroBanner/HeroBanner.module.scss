@@ -13,8 +13,8 @@
   justify-content: center;
   background-repeat: no-repeat;
   @include devices(mobile) {
-    background-size: auto 72%;
-    background-position: top center;
+    background-image: url("/mobile2.png");
+    background-position: center;
     background-color: #000;
   }
   .items {

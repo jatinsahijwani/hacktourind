@@ -64,12 +64,12 @@
   .house {
     height: 40vw;
     background-image: url("/images/layout/6.png");
-    background-position: left center;
+    background-position: center;
     background-size: cover;
 
     position: relative;
     z-index: 2;
-    padding: 2rem;
+    // padding: 2rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -101,12 +101,15 @@
       bottom: 0;
       background-image: url("/images/layout/5.png");
       background-size: cover;
-      background-position: left center;
+      background-position: center;
       opacity: 0;
       transition: opacity 0.2s ease-in;
       @include devices(mobile) {
         opacity: 1;
-        background-position: 54% 100%;
+        // background-position: 54% 100%;
+        background-image: url("/images/layout/6.png");
+        background-repeat: none;
+        scale: 100%
       }
     }
     &:hover {
@@ -200,7 +203,7 @@
             transform: scale(1.3);
           }
           .imageWrapper {
-            margin-right: -1rem;
+            margin-right: 2rem;
             transform: scale(1) !important;
             width: 85% !important;
           }
