@@ -3,8 +3,8 @@ export const AppConstant = {
     url: "",
     title: "HackTour India",
     description:
-      "Permissionless is committed to build public infrastructure for the new world. We advocate using technology as a medium for the expression of freedom and solve the most complex problems of mankind and beyond.",
-    image: "/images/socialSharingNew.jpeg",
+      "HackTour India is committed to building a decentralized future. We advocate using blockchain and open technology as a medium for digital sovereignty, empowering individuals, and solving the most complex challenges of our time and beyond.",
+    image: "/ourteam.png",
   },
   products: [
     {
