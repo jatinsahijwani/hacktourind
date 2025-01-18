@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FC, useContext } from "react";
 import { AppConstant } from "src/constant/AppConstant";
 import { MouseContext } from "src/context/mouse-context";
+import { SVGBrandLogo } from "../SVGElements";
 import s from "./Footer.module.scss";
 
 const Footer: FC = () => {
@@ -14,7 +15,7 @@ const Footer: FC = () => {
         <div className={`row ${s.row}`}>
           <div className="col-md-4 order-md-2">
             <div className={s.brand}>
-              <img src="/images/logo-full.png" alt="" />
+            <SVGBrandLogo className={s.logo} />
             </div>
           </div>
 
@@ -36,7 +37,7 @@ const Footer: FC = () => {
             </div>
           </div>
           <div className="col-md-4 order-md-1">
-            <div className={s.links}>
+            {/* <div className={s.links}>
               {AppConstant.footer.links.map((item, i) => (
                 <Link href="#" key={i}>
                   <a href={item.href} target="_blank" rel="noreferrer">
@@ -44,7 +45,7 @@ const Footer: FC = () => {
                   </a>
                 </Link>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

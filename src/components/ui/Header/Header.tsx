@@ -35,7 +35,7 @@ const Header: FC<Props> = ({ audioRef, audioControl }) => {
                 console.log("Here");
               }}
             >
-              <img src="/images/logo.svg" alt="" />
+              {/* <img src="/images/logo.svg" alt="" /> */}
             </a>
           </Link>
           <Link href="/" onClick={audioControl}>

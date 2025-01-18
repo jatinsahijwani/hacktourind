@@ -16,8 +16,8 @@ const DontMint: FC<Props> = ({ audioRef }) => {
       <div className="container">
         <div className={s.content}>
           <span className={s.title} data-aos="fade-up">
-            Advancing Humanity,
-            <br /> Almost a state.
+          A Global Network,
+            <br />  Not Just a Movement.
           </span>
           <div className={s.thumbnailWrapper} data-aos="fade-in">
             <Image

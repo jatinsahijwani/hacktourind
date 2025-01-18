@@ -7,7 +7,7 @@
   }
   .name {
     mix-blend-mode: exclusion;
-    transform: scale(1.4);
+    transform: scale(1.15);
   }
   .imageWrapper {
     transform: scale(0.9);
@@ -62,8 +62,8 @@
     }
   }
   .house {
-    height: 38vw;
-    background-image: url("/images/layout/house.jpg");
+    height: 40vw;
+    background-image: url("/images/layout/6.png");
     background-position: left center;
     background-size: cover;
 
@@ -99,7 +99,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background-image: url("/images/layout/house-colored.jpg");
+      background-image: url("/images/layout/5.png");
       background-size: cover;
       background-position: left center;
       opacity: 0;
@@ -118,7 +118,9 @@
     }
     .heading {
       font-size: 3rem;
-      font-weight: 300;
+      font-weight: 600;
+      color: yellow;
+      font: bolder;
       @include devices(mobile) {
         font-size: 2.8rem;
       }
@@ -254,7 +256,7 @@
           }
         }
         .imageWrapper {
-          width: 80%;
+          width: 100%;
           transition: transform 0.3s ease-in;
           transform: scale(0.6);
         }

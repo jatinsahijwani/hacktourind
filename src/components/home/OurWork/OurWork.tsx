@@ -23,20 +23,8 @@ const OurWork: FC = () => {
       <div className="container">
         <div className={s.house} data-aos="fade-up">
           <div className={s.content}>
-            <span className={s.heading}>Spaceship</span>
-            <p>
-              Free to access playground open for all contributors of the
-              new web
-            </p>
+            {/* <span className={s.heading}>Community Events</span> */}
           </div>
-          <span className={s.location}>
-            
-          Decentralized Autonomous Organizations (DAOs) with AI Governance
-            <br></br>
-            <a href={"/spaceship"}>
-              <i className="fas fa-arrow-right"></i> Know more
-            </a>
-          </span>
         </div>
         <div className={s.products}>
           {AppConstant.products.map((product, i) => (
@@ -53,8 +41,8 @@ const OurWork: FC = () => {
                 <div className={s.imageWrapper}>
                   <Image
                     src={product.image}
-                    width={400}
-                    height={400}
+                    width={500}
+                    height={500}
                     alt={product.name}
                     objectFit="contain"
                   />

@@ -37,7 +37,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <>
-        <audio ref={audioRef} id="audio" src="/bgMusic.mp3"></audio>
+        {/* <audio ref={audioRef} id="audio" src="/bgMusic.mp3"></audio> */}
       </>
       <Head>
         <title>{AppConstant.meta.title}</title>
@@ -55,11 +55,11 @@ const Home: NextPage = () => {
       )}
 
       <HeroBanner />
-      <DontMint />
-      <WhoAreWe />
+      {/* <DontMint /> */}
       <OurWork />
-      <SocialConnect />
-      <ContactUs />
+      <WhoAreWe />
+      {/* <SocialConnect /> */}
+      {/* <ContactUs /> */}
       <Footer />
     </Layout>
   );

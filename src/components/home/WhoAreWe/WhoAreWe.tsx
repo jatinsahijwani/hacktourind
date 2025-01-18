@@ -13,7 +13,7 @@ const WhoAreWe: FC = () => {
           data-aos-anchor=".who-we-are-main"
         >
           <Image
-            src="/images/layout/team01.jpg"
+            src="/ourteam.png"
             width={1300}
             height={770}
             objectFit="cover"
@@ -33,22 +33,31 @@ const WhoAreWe: FC = () => {
       <div className="container">
         <div className={`${s.intro} who-are-we-intro`}>
           <span data-aos="fade-up" data-aos-anchor=".who-are-we-intro">
-            {`We are everywhere.`}
+            We are HackTour IND.
+            <br /> We are everywhere.
           </span>
           <span
             data-aos="fade-up"
             data-aos-delay="50"
             data-aos-anchor=".who-are-we-intro"
           >
-            We want to build a new world, with you in the middle.
-            <br /> Self, Sovereign, Custodian.
+            Web3 is inevitable.
+            <br /> So are we.
           </span>
           <span
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-anchor=".who-are-we-intro"
           >
-            {`Also, we speak satire, house & techno.`}
+            We Don’t Follow Trends. <br/> We Set Protocols.
+          </span>
+          <span
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-anchor=".who-are-we-intro"
+          >
+            code=law; <br/>
+            community=power;
           </span>
         </div>
         <div className={s.details}>

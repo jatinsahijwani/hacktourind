@@ -67,7 +67,7 @@ const PageLoader: FC<Props> = ({ onLoaded, audioRef, audioControl }) => {
   };
 
   const welcomeMessage = () => {
-    const message = "Congratulations, now you are officially";
+    const message = "Welcome to ";
     return message.split("").map((item, i) => {
       return <span key={i}>{item}</span>;
     });
@@ -99,49 +99,13 @@ const PageLoader: FC<Props> = ({ onLoaded, audioRef, audioControl }) => {
 
   return (
     <div className={`${s.container} ${loading === 100 ? s.loaded : ""}`}>
-      {/* <iframe
-        width="1550"
-        height="1000"
-        src="https://www.youtube.com/embed/S7qaGtYKU-c"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        // allowfullscreen:true
-      ></iframe> */}
-      {/* <video
-        className={s.video}
-        muted
-        autoPlay
-        loop
-        width="1550"
-        height="1000"
-        src="https://res.cloudinary.com/drivesfnofficial/video/upload/v1665584533/Async-Gist/videoplayback_klcn0k.mp4"
-      /> */}
-      {/* <video
-        className={`${s.video} ${s.mobvid} ${s.top}`}
-        muted
-        autoPlay
-        loop
-        // width="500"
-        // height="750"
-        src="https://res.cloudinary.com/drivesfnofficial/video/upload/v1665584533/Async-Gist/videoplayback_klcn0k.mp4"
-      /> */}
-      {/* <video
-        className={`${s.video} ${s.mobvid} ${s.bottom}`}
-        muted
-        autoPlay
-        loop
-        // width="500"
-        // height="775"
-        src="https://res.cloudinary.com/drivesfnofficial/video/upload/v1665584533/Async-Gist/videoplayback_klcn0k.mp4"
-      /> */}
       <div
         className={`${s.defaultScreen} ${loading !== 0 ? s.loaded : ""}`}
         ref={(el: any) => (commonRef.current["defaultScreen"] = el)}
       >
-        <DontSendText className={`${s.bgText}  desktop-only`} />
+        {/* <DontSendText className={`${s.bgText}  desktop-only`} /> */}
         <div className={`${s.bgText} ${s.mobile} mobile-only`} />
-        <ParticleEffectButton color="#a9ff1c" hidden={loading === 1}>
+        <ParticleEffectButton color="#292b2b" hidden={loading === 1}>
           <div
             onClick={() => {
               onAction();
@@ -151,17 +115,9 @@ const PageLoader: FC<Props> = ({ onLoaded, audioRef, audioControl }) => {
             onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}
           >
-            <span>Dont</span> Click here
+            Join the Revolution
           </div>
         </ParticleEffectButton>
-        {/* <Link href="https://www.youtube.com/watch?v=S7qaGtYKU-c">
-          <a target="_blank" className={s.podcast}>
-            <div className={`${s.text}  ${loading > 1 ? s.loaded : ""}`}>
-              <i className="fas fa-play"></i>
-              {` we have a podcast as well, Don’t watch it.`}
-            </div>
-          </a>
-        </Link> */}
       </div>
 
       <div className={`${s.loadingScreen} ${loading > 1 ? s.loaded : ""}`}>
@@ -179,7 +135,6 @@ const PageLoader: FC<Props> = ({ onLoaded, audioRef, audioControl }) => {
         </div>
         <div
           className={`${s.progress} ${loading > 2 ? s.loaded : ""}`}
-          // style={{ transform: `translateX(${loading - 100}%)` }}
         />
         <span className={s.progressPercent}>{loading}%</span>
       </div>

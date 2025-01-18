@@ -4,7 +4,8 @@
   // background-attachment: fixed !important;
   height: 100vh;
   min-height: 600px;
-  background-image: url("/images/layout/hero-banner.jpg");
+  background-image: url("/hero2.png");
+  background-color: #292b2b;
   background-size: cover;
   background-position: center 100%;
   display: flex;
@@ -17,13 +18,14 @@
     background-color: #000;
   }
   .items {
-    margin-top: 4rem;
+    margin-top: -15rem;
     text-align: center;
     .item {
-      overflow: hidden;
+      // overflow: hidden;
       .imageWrapper {
         transform: translateY(120%);
         transition: transform 0.4s cubic-bezier(0.18, 0.82, 0.54, 0.87);
+        scale: 1100%;
         @include devices(mobile) {
           padding: 0 0.5rem;
         }
@@ -49,6 +51,8 @@
   .logo {
     transform: scale(2.8);
     opacity: 0;
+    position: absolute;
+    z-index: 20;
     margin-top: 1rem;
     filter: drop-shadow(5px 5px 5px #222);
     transition: transform 0.4s cubic-bezier(0.18, 0.82, 0.54, 0.87),
@@ -59,7 +63,7 @@
     }
 
     :global(.page-loaded) & {
-      transform: scale(2.5);
+      transform: scale(3.5);
       opacity: 1;
       @include devices(mobile) {
         transform: scale(1.8);
