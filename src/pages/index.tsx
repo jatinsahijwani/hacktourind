@@ -29,7 +29,7 @@ const Home: NextPage = () => {
   const [isPageLoaded, setIsPageLoaded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   useEffect(() => {
-    // document.body.classList.add("page-loaded");
+    document.body.classList.add("page-loaded");
   }, []);
 
   //Deploy 2
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <>
-        {/* <audio ref={audioRef} id="audio" src="/bgMusic.mp3"></audio> */}
+        <audio ref={audioRef} id="audio" src="/bgMusic.mp3"></audio>
       </>
       <Head>
         <title>{AppConstant.meta.title}</title>

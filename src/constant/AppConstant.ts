@@ -12,14 +12,14 @@ export const AppConstant = {
       description: "",
       image: "/images/community.png",
       desc: "",
-      url: "https://notion.com",
+      url: "https://nostalgic-leaf-187.notion.site/HackTour-IND-1604f9ac90c6802196fafd68bb2749a8",
     },
     {
       name: "Join us.",
       description: "",
       image: "/finale.png" ,
       desc: "",
-      url: "https://t.me",
+      url: "https://t.me/+lXfUskeOZiZhNGZl",
     },
   ],
   socials: [
@@ -31,7 +31,7 @@ export const AppConstant = {
     },
     {
       name: "Telegram",
-      url: "https://www.linkedin.com/company/prmsnls/",
+      url: "https://t.me/+lXfUskeOZiZhNGZl",
       icon: "/images/icon/linkedin.png",
       fontIcon: "fab fa-telegram",
     },

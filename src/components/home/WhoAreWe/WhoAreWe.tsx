@@ -64,17 +64,12 @@ const WhoAreWe: FC = () => {
           <div className="row">
             <div className="col-md-6">
               <p data-aos="fade-up">
-                Permissionless is committed to build public infrastructure for
-                the new web. We advocate technology as a medium for solving
-                the most complex problems of mankind. Annoyed that instead of
-                using this to enable various efficient trustless
-                systems with open access, profit making become the main focus. We would
-                like to change that, now.
+              HackTour India is on a mission to decentralize the future by bringing Web3 to every corner of the country. While Web2 keeps users locked in, we advocate for open, trustless systems that empower individuals. Annoyed that control and profit still dominate over true innovation? So are we. Traveling city by city, we’re equipping developers, students, and creators with the tools to break free, take ownership, and build without permission. The future is decentralized—we’re here to make it happen, now.
               </p>
             </div>
             <div className="col-md-6" data-aos="fade-up">
               <span className={s.quote}>
-                “The Internet is freedom from the limitations of land.”
+              The system isn’t broken. <br/> It was built that way. <br/> We’re building something better.
               </span>
               {/* <p>
                 Eu viverra morbi nec enim. Amet integer lobortis vitae velit id
