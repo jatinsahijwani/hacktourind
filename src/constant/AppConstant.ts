@@ -12,7 +12,7 @@ export const AppConstant = {
       description: "",
       image: "/images/community.png",
       desc: "",
-      url: "https://nostalgic-leaf-187.notion.site/HackTour-IND-1604f9ac90c6802196fafd68bb2749a8",
+      url: "https://six-shelf-4f1.notion.site/18c0bb28aaaa805b8dbdf4e27656474b?v=18c0bb28aaaa80dfb81f000ce6323812",
     },
     {
       name: "Join us.",
